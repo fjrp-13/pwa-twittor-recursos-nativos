@@ -7,7 +7,7 @@ const push = require('./push');
 const arrMensajes = [{
     _id: 'XXX',
     user: 'Spiderman',
-    mensaje: 'Hola Mundo 2'
+    mensaje: 'Hola Mundo'
 }];
 
 // Get mensajes
@@ -20,10 +20,13 @@ router.get('/', function(req, res) {
 router.post('/', function(req, res) {
     const mensaje = {
         mensaje: req.body.mensaje,
-        user: req.body.user
+        user: req.body.user,
+        lat: req.body.lat,
+        lng: req.body.lng,
+        foto: req.body.foto
     };
     arrMensajes.push(mensaje);
-    console.log(arrMensajes);
+    // console.log(arrMensajes);
 
     res.json({
         success: true,
