@@ -1,6 +1,8 @@
 # Twittor:
 
-Un cascarón de chat usando jQuery para PWAs con notificaciones PUSH.
+Un cascarón de chat usando jQuery para PWAs con uso de recursos nativos:
+* cámara
+* ubicación gps
 
 # Notas:
 Recuerden que deben de reconstruir los módulos de node con el comando
